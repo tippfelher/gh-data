@@ -44,7 +44,7 @@ jobs:
         with:
           name: dist-files
       - name: Print filename
-        run: echo "${{ jobs.build.outputs.js-filename }}"
+        run: echo "${{ github.job.build.outputs.js-filename }}"
       - name: Output contents
         run: ls
       - name: Deploy
